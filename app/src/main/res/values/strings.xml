@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EvaluableChistesJuego</string>
+    <string name="objetivo.gif">Una imagen animada </string>
+    <string name="introChiste">Para escuchar un chiste, presiona el botón dos veces</string>
+</resources>

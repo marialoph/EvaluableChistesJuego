@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/degradadocolor"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="417dp"
+        android:layout_height="420dp"
+        android:background="@drawable/degradadofondo2"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="-7dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="268dp"
+            android:layout_height="231dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="132dp"
+            app:srcCompat="@drawable/imagentema1" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="cursive"
+            android:text="Pulse un botón"
+
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/buttonDados"
+        android:layout_width="74dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="532dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/botonespulsar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dado"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/buttonChistes"
+        android:layout_width="74dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/botonespulsar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:srcCompat="@drawable/conversacion"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/buttonLlamar"
+        android:layout_width="74dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/botonespulsar"
+        app:layout_constraintEnd_toStartOf="@+id/buttonAlarma"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:srcCompat="@drawable/telefono__1_"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/buttonAlarma"
+        android:layout_width="74dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/botonespulsar"
+        app:layout_constraintEnd_toStartOf="@+id/buttonChistes"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:srcCompat="@drawable/despertador"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/buttonSpotify"
+        android:layout_width="74dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/botonespulsar"
+        android:radius="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLlamar"
+        app:srcCompat="@drawable/social"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/buttonMapa"
+        android:layout_width="74dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/botonespulsar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toEndOf="@+id/buttonSpotify"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAlarma"
+        app:srcCompat="@drawable/ubicacion"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="357dp"
+        android:layout_height="120dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="8dp"
+        app:cardBackgroundColor="#2196F3"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.703"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.973"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageViewGif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-239dp"
+            android:contentDescription="@string/objetivo.gif" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100sp"
+            android:paddingTop="20dp"
+            android:fontFamily="cursive"
+            android:textSize="10sp"
+            android:text="Proyecto Evaluable Tema 2"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100sp"
+            android:fontFamily="cursive"
+            android:paddingTop="50dp"
+            android:textSize="8sp"
+            android:text="María López Hernández-Carrillo"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100sp"
+            android:paddingTop="80dp"
+            android:textSize="8sp"
+            android:fontFamily="cursive"
+            android:text="Curso: 2024/2025"
+            android:textColor="@color/white" />
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

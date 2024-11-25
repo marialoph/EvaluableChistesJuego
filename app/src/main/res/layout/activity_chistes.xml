@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ADD8E6"
+    tools:context=".MainActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnPulsarChiste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escuchar Chiste"
+        android:textColor="@color/colorStart"
+        app:backgroundTint="@null"
+        android:background="@drawable/botonespulsar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/buttonChistesVolver"
+        android:layout_width="65dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/botonespulsar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/volver"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageViewGif"
+        android:layout_width="127dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPulsarChiste"
+        app:srcCompat="@drawable/musica"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnPulsarNuevoChiste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botonespulsar"
+        android:text="Nuevo chiste"
+        android:textColor="@color/colorStart"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.824" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
